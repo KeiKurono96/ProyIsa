@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".java.home">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2E36CA"
+        android:scaleType="fitXY"
+        android:src="@drawable/bckg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="244dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="32dp"
+        android:text="Bienvenido al Restaurante Riko Kombate"
+        android:textAlignment="center"
+        android:textColor="#BA3131"
+        android:textColorHighlight="#2C43C6"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="186dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="#D52145"
+        android:onClick="lista"
+        android:shadowColor="#AE5959"
+        android:text="Lista de Menús"
+        app:cornerRadius="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:rippleColor="#712929" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="#2E36CA"
+        android:onClick="rapida"
+        android:text="Carta Rápida"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+        android:backgroundTint="#2E36CA"
+        android:onClick="mipedido"
+        android:text="Mi Pedido"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.227" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="150dp"
+        android:layout_height="53dp"
+        android:backgroundTint="#2E36CA"
+        android:onClick="informacion"
+        android:text="Información"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.414" />
+
+    <ImageButton
+        android:id="@+id/webBtn"
+        android:layout_width="165dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="-8dp"
+        android:background="@drawable/my_button_bg"
+        android:scaleType="centerInside"
+        android:src="@drawable/webicon2"
+        android:text="Página web"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.846" />
+</androidx.constraintlayout.widget.ConstraintLayout>
